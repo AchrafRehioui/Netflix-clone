@@ -9,7 +9,7 @@ export default function Form({ children, ...restProps }) {
 
 
 Form.Title = function FormTitle({ children, ...restProps }) {
-    return <Text {...restProps}>{children}</Text>;
+    return <Title {...restProps}>{children}</Title>;
 }
 
 Form.Error = function FormError({ children, ...restProps }) {
