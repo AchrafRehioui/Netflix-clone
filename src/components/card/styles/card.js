@@ -45,6 +45,7 @@ export const Group = styled.div`
 
 
 export const SubTitle = styled.p`
+
     font-size: 12px;
     color: #fff;
     font-weight: bold;
@@ -67,14 +68,14 @@ export const Text = styled.p`
 `;
 
 export const FeatureText = styled.p`
-  font-size: 18px;
-  color: white;
-  font-weight: ${({ fontWeight }) => (fontWeight === 'bold' ? 'bold' : 'normal')};
-  margin: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: ${({ fontWeight }) => (fontWeight === 'bold' ? 'bold' : 'normal')};
+    margin: 0;
   
-  @media (max-width: 600px) {
-    line-height: 22px;
-  
+    @media (max-width: 600px) {
+      line-height: 22px;
+    }
 `;
 
 
@@ -125,11 +126,12 @@ export const FeatureClose = styled.button`
     img {
         filter: brightness(0) invert(1);
         width: 24px;
-    }
+  }
 `;
 
 
 export const Maturity = styled.div`
+  
   background-color: ${({ rating }) => (rating >= 15 ? 'red' : 'green')};
   border-radius: 15px;
   width: 20px;
@@ -194,7 +196,7 @@ export const Item = styled.div`
     &:hover {
         transform: scale(1.3);
         z-index: 99;
-      }
+    }
 
     @media (min-width: 1200px) {
         &:hover ${Meta}, &:hover ${Text}, &:hover ${SubTitle} {

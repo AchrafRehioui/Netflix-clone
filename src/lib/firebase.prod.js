@@ -15,6 +15,7 @@ const config = {
     appId: ""
 };
 
+
 const firebase = Firebase.initializeApp(config);
 
 
