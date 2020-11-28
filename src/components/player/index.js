@@ -27,7 +27,8 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
                 </video>
                 <Close />
             </Inner>
-        </Overlay>
+        </Overlay>,
+        document.body
     ) : null;
 }
 
@@ -36,3 +37,5 @@ Player.Button = function PlayerButton({ ...restProps }) {
 
     return <Button onClick={() => setShowPlayer((showPlayer) => !showPlayer)}>Play</Button>
 }
+
+

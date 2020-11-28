@@ -21,7 +21,7 @@ import {
 
 
 export default function Header({ bg = true, children, ...restProps }) {
-    return bg ? <Background {...restProps}>{children}</Background> : children;
+    return bg ? (<Background {...restProps}>{children}</Background>) : (children);
 }
 
 Header.Feature = function HeaderFeature({ children, ...restProps }) {

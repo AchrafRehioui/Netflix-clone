@@ -111,7 +111,7 @@ export const Group = styled.div`
 `;
 
 export const SearchInput = styled.input`
-  ackground-color: #44444459;
+  background-color: #44444459;
   color: white;
   border: 1px solid white;
   transition: width 0.5s;
