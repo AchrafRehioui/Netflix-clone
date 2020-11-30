@@ -1,4 +1,4 @@
-import React, { useState, useContext  } from 'react';
+import React, { useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { FirebaseContext } from '../context/firebase';
 import { FooterContainer } from '../containers/footer';
@@ -47,14 +47,14 @@ export default function Signin() {
                             onChange={({ target }) => setEmailAddress(target.value)}
                         />
                         <Form.Input
-                           
+
                             placeholder="Password"
                             autoComplete="off"
                             type="password"
                             value={password}
                             onChange={({ target }) => setPassword(target.value)}
                         />
-                        <Form.Submit disabled={isInvalid} type="submit">
+                        <Form.Submit disabled={isInvalid} type="submit" data-testid="sign-in">
                             Sign In
                         </Form.Submit>
                     </Form.Base>
