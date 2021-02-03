@@ -2,8 +2,6 @@
 
 ### [Live Site](https://netflix-clone-df33b.web.app/)
 
-![Chat Application](https://i.ibb.co/d6v9FCD/netflixclone.jpg)
-
 ## Introduction
 This is a code repository for the corresponding Netflix Clone. 
 
